@@ -1,81 +1,81 @@
 employee_id,employee_name,role,department,location,latitude,longitude,age,job_level,tenure_years,position_tenure_years,promotion_wait_months,internal_applications_12m,manager_rating,engagement_score,work_life_balance,workload_score,overtime_hours_month,absence_days_12m,flexible_work_score,performance_rating,client_facing,direct_reports,active_projects,succession_ready,replacement_time_months,attrition_label,criticality_label,attrition_probability,criticality_probability,attrition_prediction,criticality_prediction,Keepz
-E_00001,Aryan Maharaj,Operations Analyst,Operations,Chennai,13.0827,80.2707,44,2,5.5,1.5,17,0,3.2,4.2,5.0,2,5,0,2,4,1,0,3,0,2,0,0,0.065,0.278,Likely to stay,Non-critical,4.28
-E_00002,Udant Dewan,HR Executive,HR,Hyderabad,17.385,78.4867,25,1,1.8,0.2,3,0,3.1,3.3,4.2,2,4,2,3,2,1,0,1,0,1,0,0,0.063,0.094,Likely to stay,Non-critical,1.49
-E_00003,Gagan Sami,Delivery Manager,Operations,Gurgaon,28.4595,77.0266,57,5,1.5,0.6,14,2,3.2,3.9,3.2,4,17,0,4,3,1,6,1,1,2,1,1,0.633,0.624,Likely to leave,Critical,0.99
-E_00004,Ayushman Chander,Support Team Lead,Support,Delhi,28.6139,77.209,47,4,5.1,0.7,13,0,3.6,3.4,4.0,4,11,2,4,4,1,0,2,0,2,0,1,0.117,0.518,Likely to stay,Critical,4.43
-E_00005,Viraj Tiwari,Finance Analyst,Finance,Pune,18.5204,73.8567,50,2,5.8,3.4,36,1,3.2,3.7,3.5,4,16,1,1,3,0,0,1,0,2,1,0,0.708,0.096,Likely to leave,Non-critical,0.14
-E_00006,Rushil Saini,Senior Software Engineer,Engineering,Bangalore,12.9716,77.5946,43,3,9.2,2.7,21,1,4.6,5.0,3.9,3,13,1,3,3,1,0,1,0,2,0,0,0.238,0.184,Likely to stay,Non-critical,0.77
-E_00007,Saumya Mall,Marketing Manager,Marketing,Bangalore,12.9716,77.5946,59,5,1.1,0.3,15,1,3.0,2.9,3.1,3,21,5,3,3,0,12,5,0,3,1,1,0.705,0.763,Likely to leave,Critical,1.08
-E_00008,Nathaniel Sami,Key Account Manager,Sales,Bangalore,12.9716,77.5946,59,4,1.0,0.2,3,0,3.1,3.0,2.8,4,22,2,4,3,1,11,4,0,3,0,1,0.444,0.774,Likely to stay,Critical,1.74
-E_00009,Arunima Dugal,Marketing Executive,Marketing,Hyderabad,17.385,78.4867,48,1,4.1,3.7,46,2,2.5,3.6,4.2,3,13,2,2,3,0,0,2,0,1,1,0,0.444,0.064,Likely to stay,Non-critical,0.14
-E_00010,Gayathri Chaudry,HR Business Partner,HR,Hyderabad,17.385,78.4867,48,4,2.5,2.3,32,0,2.2,2.5,3.5,3,18,3,2,5,0,2,1,0,2,1,1,0.655,0.668,Likely to leave,Critical,1.02
-E_00011,Lajita Chatterjee,Account Executive,Sales,Bangalore,12.9716,77.5946,54,2,6.7,4.1,30,1,3.2,3.7,3.3,3,12,5,4,3,1,0,1,0,2,0,0,0.386,0.101,Likely to stay,Non-critical,0.26
-E_00012,Hemangini Lalla,Marketing Manager,Marketing,Bangalore,12.9716,77.5946,39,5,2.2,1.6,20,0,2.4,3.2,4.9,2,0,3,5,4,0,6,2,0,3,0,1,0.092,0.766,Likely to stay,Critical,8.33
-E_00013,Tripti Yadav,Finance Analyst,Finance,Bangalore,12.9716,77.5946,43,2,1.2,1.2,12,1,4.1,4.2,3.1,4,22,2,3,3,0,0,2,0,1,0,0,0.442,0.111,Likely to stay,Non-critical,0.25
-E_00014,Kritika Brar,L2 Support Engineer,Support,Noida,28.5355,77.391,55,3,5.5,1.1,15,3,4.2,3.1,2.3,5,31,4,5,5,1,0,2,0,2,1,1,0.693,0.391,Likely to leave,Non-critical,0.56
-E_00015,Janaki Handa,HR Business Partner,HR,Pune,18.5204,73.8567,38,4,7.8,7.3,48,2,2.9,3.1,3.0,4,25,4,4,3,1,0,4,0,3,1,1,0.763,0.659,Likely to leave,Critical,0.86
-E_00016,Chakradev Kari,Engineering Manager,Engineering,Bangalore,12.9716,77.5946,56,5,1.9,1.5,30,0,3.1,3.5,4.7,2,0,2,3,3,0,0,1,0,2,0,0,0.069,0.348,Likely to stay,Non-critical,5.04
-E_00017,Fariq Kaul,Account Executive,Sales,Hyderabad,17.385,78.4867,52,2,4.1,4.1,33,3,2.9,2.6,3.3,3,19,1,3,3,1,0,4,0,2,1,0,0.756,0.177,Likely to leave,Non-critical,0.23
-E_00018,Lajita Mall,Senior Software Engineer,Engineering,Gurgaon,28.4595,77.0266,41,3,2.3,0.2,14,0,5.0,3.8,3.8,3,20,2,4,2,0,0,1,0,2,0,0,0.235,0.15,Likely to stay,Non-critical,0.64
-E_00019,Janya Gaba,Senior Software Engineer,Engineering,Chennai,13.0827,80.2707,32,3,5.3,4.6,44,0,2.6,3.1,4.8,1,0,3,2,4,1,0,4,0,2,0,1,0.116,0.463,Likely to stay,Non-critical,3.99
-E_00020,Isha Kadakia,Sales Manager,Sales,Gurgaon,28.4595,77.0266,54,5,4.1,3.3,31,0,2.9,4.0,4.9,2,10,3,2,3,1,9,1,0,3,0,1,0.083,0.753,Likely to stay,Critical,9.07
-E_00021,Ekbal Garg,Software Engineer,Engineering,Chennai,13.0827,80.2707,48,2,2.7,2.2,24,1,4.1,4.0,4.6,2,4,4,2,3,1,0,2,0,2,0,0,0.1,0.106,Likely to stay,Non-critical,1.06
-E_00022,Nihal Shere,Key Account Manager,Sales,Pune,18.5204,73.8567,37,4,4.3,2.0,18,2,4.1,4.1,3.2,4,26,2,4,2,1,0,1,0,2,1,0,0.642,0.3,Likely to leave,Non-critical,0.47
-E_00023,Anamika Kanda,Senior Software Engineer,Engineering,Noida,28.5355,77.391,46,3,4.9,2.5,24,0,5.0,3.7,3.1,4,16,4,5,3,1,0,1,0,1,0,0,0.43,0.143,Likely to stay,Non-critical,0.33
-E_00024,Daksh Karnik,Financial Controller,Finance,Bangalore,12.9716,77.5946,53,5,11.5,3.4,27,0,3.9,3.6,3.7,4,19,2,4,4,0,5,1,0,2,0,1,0.403,0.654,Likely to stay,Critical,1.62
-E_00025,Diya Rattan,Solution Architect,Engineering,Hyderabad,17.385,78.4867,40,5,8.3,6.3,48,3,4.6,4.6,5.0,1,1,0,4,3,1,0,1,1,2,0,0,0.112,0.353,Likely to stay,Non-critical,3.15
-E_00026,Dominic Kakar,HR Executive,HR,Bangalore,12.9716,77.5946,27,1,3.8,2.3,25,1,3.3,3.7,3.6,4,16,2,2,3,0,0,1,0,1,1,0,0.654,0.059,Likely to leave,Non-critical,0.09
-E_00027,Simon Tata,Sales Executive,Sales,Hyderabad,17.385,78.4867,49,1,4.1,2.8,32,0,3.4,3.9,4.4,3,16,3,3,3,1,0,1,0,1,0,0,0.302,0.068,Likely to stay,Non-critical,0.23
-E_00028,Tara Dhar,Program Manager,Operations,Gurgaon,28.4595,77.0266,51,5,7.4,1.1,11,0,4.2,3.1,3.3,3,11,2,3,5,1,0,6,1,3,0,1,0.194,0.697,Likely to stay,Critical,3.59
-E_00029,Liam Koshy,HR Executive,HR,Chennai,13.0827,80.2707,36,1,3.7,2.0,20,1,4.5,4.8,4.6,2,0,1,3,2,1,0,1,0,1,0,0,0.078,0.063,Likely to stay,Non-critical,0.81
-E_00030,Priya Rastogi,Marketing Executive,Marketing,Pune,18.5204,73.8567,57,1,4.9,3.5,32,3,2.5,3.1,3.7,3,14,2,5,4,1,0,1,0,1,1,0,0.646,0.143,Likely to leave,Non-critical,0.22
-E_00031,Theodore Devi,Support Team Lead,Support,Bangalore,12.9716,77.5946,38,4,4.7,4.4,48,3,4.2,4.7,4.6,2,5,2,2,3,1,6,1,0,3,0,1,0.132,0.753,Likely to stay,Critical,5.7
-E_00032,Gavin Batta,Key Account Manager,Sales,Gurgaon,28.4595,77.0266,55,4,0.7,0.6,16,0,4.6,4.7,3.8,3,13,2,3,4,1,12,3,0,2,0,1,0.147,0.719,Likely to stay,Critical,4.89
-E_00033,Michael Dutta,Marketing Executive,Marketing,Chennai,13.0827,80.2707,31,1,3.9,2.6,28,1,2.6,2.9,4.1,2,8,3,4,3,0,0,1,0,1,0,0,0.153,0.06,Likely to stay,Non-critical,0.39
-E_00034,Devansh Rajan,Software Engineer,Engineering,Chennai,13.0827,80.2707,36,2,2.5,1.5,17,0,3.4,3.1,2.7,4,15,2,4,3,1,0,2,0,2,0,0,0.414,0.112,Likely to stay,Non-critical,0.27
-E_00035,Upadhriti Wadhwa,Marketing Specialist,Marketing,Bangalore,12.9716,77.5946,29,2,6.9,6.2,48,0,2.4,3.4,5.0,2,4,2,3,3,0,0,1,0,2,0,0,0.117,0.091,Likely to stay,Non-critical,0.78
-E_00036,Advay Contractor,Support Manager,Support,Bangalore,12.9716,77.5946,43,5,1.7,1.6,34,0,4.6,3.6,3.2,2,12,1,2,4,1,8,2,1,2,0,1,0.176,0.716,Likely to stay,Critical,4.07
-E_00037,Harini Choudhury,Program Manager,Operations,Bangalore,12.9716,77.5946,52,5,11.0,8.9,48,1,4.2,4.0,2.4,4,32,0,4,3,1,0,3,1,2,1,1,0.656,0.488,Likely to leave,Non-critical,0.74
-E_00038,Radhika Dugar,Support Analyst,Support,Bangalore,12.9716,77.5946,41,2,5.8,1.3,14,0,2.9,2.9,2.5,5,24,2,3,4,1,0,4,0,2,1,0,0.65,0.278,Likely to leave,Non-critical,0.43
-E_00039,Aarush Lall,L2 Support Engineer,Support,Gurgaon,28.4595,77.0266,52,3,5.5,1.2,11,0,3.8,4.0,4.0,3,5,2,5,5,1,0,1,0,1,0,0,0.069,0.256,Likely to stay,Non-critical,3.71
-E_00040,Yashica Cherian,Marketing Specialist,Marketing,Hyderabad,17.385,78.4867,52,2,6.7,4.6,39,1,2.7,3.4,3.4,4,14,2,3,2,0,0,2,0,1,1,0,0.705,0.075,Likely to leave,Non-critical,0.11
-E_00041,Yashica Issac,Marketing Executive,Marketing,Pune,18.5204,73.8567,39,1,5.8,0.4,9,1,3.5,4.2,3.9,3,14,1,3,4,0,0,1,0,1,0,0,0.223,0.133,Likely to stay,Non-critical,0.6
-E_00042,Kashvi Edwin,HR Executive,HR,Mumbai,19.076,72.8777,59,1,3.1,0.8,15,0,3.2,3.7,4.6,1,10,2,3,3,0,0,2,0,2,0,0,0.058,0.09,Likely to stay,Non-critical,1.55
-E_00043,Ekiya Suresh,Project Manager,Operations,Mumbai,19.076,72.8777,37,4,3.3,3.1,33,2,3.9,3.1,2.3,5,28,5,4,4,1,6,2,0,2,1,1,0.741,0.702,Likely to leave,Critical,0.95
-E_00044,Isaac Patil,Delivery Manager,Operations,Mumbai,19.076,72.8777,48,5,2.7,1.6,17,1,4.4,3.9,3.9,2,11,4,4,3,1,0,2,1,2,0,0,0.09,0.37,Likely to stay,Non-critical,4.11
-E_00045,Wriddhish Bhardwaj,HR Business Partner,HR,Navi Mumbai,19.033,73.0297,35,4,4.4,1.5,22,0,5.0,4.5,4.2,2,7,6,4,4,0,12,3,1,2,0,1,0.056,0.718,Likely to stay,Critical,12.82
-E_00046,Farhan Chada,Senior Finance Analyst,Finance,Hyderabad,17.385,78.4867,40,3,3.6,2.0,34,0,3.3,3.1,3.5,3,16,3,3,4,0,0,2,0,1,0,0,0.458,0.243,Likely to stay,Non-critical,0.53
-E_00047,Ekapad Walia,Program Manager,Operations,Gurgaon,28.4595,77.0266,45,5,1.5,0.4,10,0,3.3,3.3,5.0,1,4,1,5,4,1,0,3,0,3,0,1,0.062,0.69,Likely to stay,Critical,11.13
-E_00048,Kabir Soman,Project Manager,Operations,Hyderabad,17.385,78.4867,47,4,3.5,1.8,33,0,2.8,3.5,4.5,2,7,1,4,2,1,0,2,0,2,0,0,0.073,0.328,Likely to stay,Non-critical,4.49
-E_00049,Alka Wable,Engineering Manager,Engineering,Gurgaon,28.4595,77.0266,55,5,3.2,1.6,26,0,1.7,2.4,3.3,3,20,4,5,3,1,10,1,0,3,1,1,0.679,0.756,Likely to leave,Critical,1.11
-E_00050,Siddharth Zacharia,HR Business Partner,HR,Bangalore,12.9716,77.5946,49,4,2.1,1.4,21,0,3.5,3.6,3.4,4,15,1,3,4,0,0,4,0,2,0,1,0.335,0.576,Likely to stay,Critical,1.72
-E_00051,Devika Rastogi,Finance Manager,Finance,Gurgaon,28.4595,77.0266,46,5,1.6,1.4,20,1,4.8,4.1,4.2,2,0,2,4,3,1,6,4,1,3,0,1,0.084,0.779,Likely to stay,Critical,9.27
-E_00052,Raksha Varughese,Marketing Specialist,Marketing,Bangalore,12.9716,77.5946,32,2,3.8,0.7,11,0,5.0,4.4,4.6,2,6,3,4,4,1,0,1,0,1,0,0,0.053,0.129,Likely to stay,Non-critical,2.43
-E_00053,Jai Kota,Financial Controller,Finance,Pune,18.5204,73.8567,52,5,0.9,0.2,12,0,3.8,4.4,3.9,4,18,1,3,4,0,11,3,0,3,0,1,0.183,0.779,Likely to stay,Critical,4.26
-E_00054,Devansh Nigam,Lead Engineer,Engineering,Kolkata,22.5726,88.3639,47,4,4.5,3.9,32,0,4.5,3.9,2.7,5,20,4,3,4,0,5,1,0,2,1,1,0.562,0.674,Likely to leave,Critical,1.2
-E_00055,Victor Kannan,Marketing Specialist,Marketing,Pune,18.5204,73.8567,51,2,5.9,2.1,15,0,4.2,3.9,3.5,4,12,0,3,3,0,0,3,0,2,0,0,0.204,0.172,Likely to stay,Non-critical,0.84
-E_00056,Ekavir Bhargava,Sales Executive,Sales,Bangalore,12.9716,77.5946,60,1,2.5,1.5,13,0,2.8,3.6,4.6,1,4,1,4,3,1,0,6,0,2,0,0,0.062,0.174,Likely to stay,Non-critical,2.81
-E_00057,Ekansh Balay,Senior Finance Analyst,Finance,Chennai,13.0827,80.2707,43,3,3.8,1.4,21,0,2.5,3.2,4.1,3,14,4,3,4,0,0,1,0,2,0,0,0.278,0.268,Likely to stay,Non-critical,0.96
-E_00058,Ekavir Varkey,Support Manager,Support,Gurgaon,28.4595,77.0266,41,5,1.6,0.9,20,0,1.9,2.8,2.8,4,23,3,1,5,1,3,1,0,3,1,1,0.708,0.775,Likely to leave,Critical,1.09
-E_00059,Arya Sunder,Operations Analyst,Operations,Bangalore,12.9716,77.5946,42,2,7.8,1.7,26,0,5.0,4.5,4.7,1,0,2,2,3,1,0,1,0,2,0,0,0.064,0.111,Likely to stay,Non-critical,1.73
-E_00060,Kevin Solanki,Operations Analyst,Operations,Pune,18.5204,73.8567,40,2,1.2,0.7,8,0,3.6,3.7,4.9,2,6,3,3,4,1,0,4,0,2,0,0,0.058,0.283,Likely to stay,Non-critical,4.88
-E_00061,Urvashi Ray,Operations Analyst,Operations,Bangalore,12.9716,77.5946,37,2,10.7,10.3,48,0,3.8,3.7,4.2,2,4,5,1,3,1,0,2,0,2,0,0,0.092,0.139,Likely to stay,Non-critical,1.51
-E_00062,Girindra Chatterjee,Delivery Manager,Operations,Mumbai,19.076,72.8777,45,5,2.5,0.4,13,0,4.8,3.6,2.5,4,28,6,4,3,1,0,2,0,3,0,1,0.426,0.584,Likely to stay,Critical,1.37
-E_00063,Irya Sampath,HR Executive,HR,Bangalore,12.9716,77.5946,59,1,11.7,9.2,48,0,3.4,4.7,4.5,3,8,3,3,3,0,0,2,0,1,0,0,0.137,0.085,Likely to stay,Non-critical,0.62
-E_00064,Unni Bhagat,Marketing Executive,Marketing,Bangalore,12.9716,77.5946,54,1,7.3,0.9,16,0,4.1,4.1,2.8,5,30,1,4,4,0,0,2,0,1,0,0,0.443,0.151,Likely to stay,Non-critical,0.34
-E_00065,Darsh Rau,Senior Finance Analyst,Finance,Hyderabad,17.385,78.4867,51,3,4.4,1.3,13,1,3.2,3.5,3.0,4,23,3,3,3,0,0,2,0,1,1,0,0.679,0.149,Likely to leave,Non-critical,0.22
-E_00066,Ikbal Kothari,Program Manager,Operations,Mumbai,19.076,72.8777,46,5,4.7,3.9,43,1,3.7,3.7,4.2,2,7,1,5,3,1,11,3,0,3,0,1,0.11,0.78,Likely to stay,Critical,7.09
-E_00067,Ranveer Yadav,Marketing Executive,Marketing,Pune,18.5204,73.8567,43,1,2.6,0.6,20,0,2.0,2.6,4.2,2,6,3,4,3,0,0,2,0,1,0,0,0.138,0.068,Likely to stay,Non-critical,0.49
-E_00068,Logan Sami,Program Manager,Operations,Pune,18.5204,73.8567,55,5,6.1,5.8,48,2,3.6,4.0,4.3,2,6,1,4,3,1,0,5,0,3,0,1,0.13,0.663,Likely to stay,Critical,5.1
-E_00069,Arya Shere,Delivery Manager,Operations,Pune,18.5204,73.8567,39,5,5.4,0.7,15,0,3.6,3.9,4.4,2,10,0,4,3,1,9,2,0,3,0,1,0.052,0.759,Likely to stay,Critical,14.6
-E_00070,Faqid Savant,Marketing Specialist,Marketing,Bangalore,12.9716,77.5946,48,2,3.8,1.5,11,0,2.9,2.5,3.3,3,18,0,3,3,0,0,1,0,1,0,0,0.463,0.06,Likely to stay,Non-critical,0.13
-E_00071,Chandresh Zachariah,Marketing Executive,Marketing,Hyderabad,17.385,78.4867,34,1,0.5,0.3,15,1,3.4,3.3,3.3,4,15,2,3,4,0,0,3,0,1,1,0,0.612,0.226,Likely to leave,Non-critical,0.37
-E_00072,Girik Khalsa,HR Business Partner,HR,Bangalore,12.9716,77.5946,41,4,4.5,1.5,8,0,3.2,4.0,4.7,3,8,2,3,4,1,2,1,0,3,0,1,0.078,0.764,Likely to stay,Critical,9.79
-E_00073,Niharika Sunder,Project Manager,Operations,Hyderabad,17.385,78.4867,59,4,5.0,2.6,30,0,3.5,3.4,3.3,4,24,3,4,3,1,4,1,0,3,1,1,0.648,0.754,Likely to leave,Critical,1.16
-E_00074,Tanay Rattan,Marketing Specialist,Marketing,Delhi,28.6139,77.209,31,2,2.3,1.0,12,0,2.9,4.4,4.7,1,2,2,4,2,1,0,4,0,2,0,0,0.058,0.164,Likely to stay,Non-critical,2.83
-E_00075,Nitesh Raghavan,HR Business Partner,HR,Chennai,13.0827,80.2707,42,4,0.8,0.3,14,0,2.4,2.6,2.4,4,25,5,4,4,1,9,3,0,3,1,1,0.678,0.786,Likely to leave,Critical,1.16
-E_00076,Madhavi Lanka,Marketing Manager,Marketing,Bangalore,12.9716,77.5946,48,5,9.9,5.7,48,0,3.6,3.7,4.6,1,2,3,5,3,0,6,3,0,3,0,1,0.078,0.757,Likely to stay,Critical,9.71
-E_00077,Bhavika Sampath,Account Executive,Sales,Noida,28.5355,77.391,31,2,0.7,0.3,11,0,2.4,3.1,4.2,3,13,2,4,3,1,0,1,0,2,0,0,0.175,0.13,Likely to stay,Non-critical,0.74
-E_00078,Mohammed Gupta,Senior Software Engineer,Engineering,Kolkata,22.5726,88.3639,40,3,4.1,2.9,21,1,2.3,3.0,3.3,3,17,1,4,5,0,0,5,0,2,1,1,0.75,0.432,Likely to leave,Non-critical,0.58
-E_00079,Teerth Bhardwaj,Project Manager,Operations,Navi Mumbai,19.033,73.0297,52,4,5.1,1.3,16,0,3.3,3.5,4.0,2,6,1,3,3,1,6,3,0,3,0,1,0.064,0.778,Likely to stay,Critical,12.16
-E_00080,Dipta Bhandari,Support Team Lead,Support,Pune,18.5204,73.8567,49,4,4.3,3.0,31,1,3.3,2.9,3.0,4,31,3,5,3,1,3,3,0,3,1,1,0.776,0.77,Likely to leave,Critical,0.99
+E_00001,Aryan Maharaj,Operations Analyst,Operations,Chennai,13.0827,80.2707,44,2,5.5,1.5,17,0,3.2,4.2,5.0,2,5,0,2,4,1,0,3,0,2,0,0,0.065,0.278,Likely to stay,Non-critical,9.6
+E_00002,Udant Dewan,HR Executive,HR,Hyderabad,17.385,78.4867,25,1,1.8,0.2,3,0,3.1,3.3,4.2,2,4,2,3,2,1,0,1,0,1,0,0,0.063,0.094,Likely to stay,Non-critical,3.23
+E_00003,Gagan Sami,Delivery Manager,Operations,Gurgaon,28.4595,77.0266,57,5,1.5,0.6,14,2,3.2,3.9,3.2,4,17,0,4,3,1,6,1,1,2,1,1,0.633,0.624,Likely to leave,Critical,46.37
+E_00004,Ayushman Chander,Support Team Lead,Support,Delhi,28.6139,77.209,47,4,5.1,0.7,13,0,3.6,3.4,4.0,4,11,2,4,4,1,0,2,0,2,0,1,0.117,0.518,Likely to stay,Critical,19.78
+E_00005,Viraj Tiwari,Finance Analyst,Finance,Pune,18.5204,73.8567,50,2,5.8,3.4,36,1,3.2,3.7,3.5,4,16,1,1,3,0,0,1,0,2,1,0,0.708,0.096,Likely to leave,Non-critical,7.64
+E_00006,Rushil Saini,Senior Software Engineer,Engineering,Bangalore,12.9716,77.5946,43,3,9.2,2.7,21,1,4.6,5.0,3.9,3,13,1,3,3,1,0,1,0,2,0,0,0.238,0.184,Likely to stay,Non-critical,8.59
+E_00007,Saumya Mall,Marketing Manager,Marketing,Bangalore,12.9716,77.5946,59,5,1.1,0.3,15,1,3.0,2.9,3.1,3,21,5,3,3,0,12,5,0,3,1,1,0.705,0.763,Likely to leave,Critical,60.54
+E_00008,Nathaniel Sami,Key Account Manager,Sales,Bangalore,12.9716,77.5946,59,4,1.0,0.2,3,0,3.1,3.0,2.8,4,22,2,4,3,1,11,4,0,3,0,1,0.444,0.774,Likely to stay,Critical,47.28
+E_00009,Arunima Dugal,Marketing Executive,Marketing,Hyderabad,17.385,78.4867,48,1,4.1,3.7,46,2,2.5,3.6,4.2,3,13,2,2,3,0,0,2,0,1,1,0,0.444,0.064,Likely to stay,Non-critical,3.91
+E_00010,Gayathri Chaudry,HR Business Partner,HR,Hyderabad,17.385,78.4867,48,4,2.5,2.3,32,0,2.2,2.5,3.5,3,18,3,2,5,0,2,1,0,2,1,1,0.655,0.668,Likely to leave,Critical,50.67
+E_00011,Lajita Chatterjee,Account Executive,Sales,Bangalore,12.9716,77.5946,54,2,6.7,4.1,30,1,3.2,3.7,3.3,3,12,5,4,3,1,0,1,0,2,0,0,0.386,0.101,Likely to stay,Non-critical,5.76
+E_00012,Hemangini Lalla,Marketing Manager,Marketing,Bangalore,12.9716,77.5946,39,5,2.2,1.6,20,0,2.4,3.2,4.9,2,0,3,5,4,0,6,2,0,3,0,1,0.092,0.766,Likely to stay,Critical,27.91
+E_00013,Tripti Yadav,Finance Analyst,Finance,Bangalore,12.9716,77.5946,43,2,1.2,1.2,12,1,4.1,4.2,3.1,4,22,2,3,3,0,0,2,0,1,0,0,0.442,0.111,Likely to stay,Non-critical,6.76
+E_00014,Kritika Brar,L2 Support Engineer,Support,Noida,28.5355,77.391,55,3,5.5,1.1,15,3,4.2,3.1,2.3,5,31,4,5,5,1,0,2,0,2,1,1,0.693,0.391,Likely to leave,Non-critical,30.7
+E_00015,Janaki Handa,HR Business Partner,HR,Pune,18.5204,73.8567,38,4,7.8,7.3,48,2,2.9,3.1,3.0,4,25,4,4,3,1,0,4,0,3,1,1,0.763,0.659,Likely to leave,Critical,54.97
+E_00016,Chakradev Kari,Engineering Manager,Engineering,Bangalore,12.9716,77.5946,56,5,1.9,1.5,30,0,3.1,3.5,4.7,2,0,2,3,3,0,0,1,0,2,0,0,0.069,0.348,Likely to stay,Non-critical,12.12
+E_00017,Fariq Kaul,Account Executive,Sales,Hyderabad,17.385,78.4867,52,2,4.1,4.1,33,3,2.9,2.6,3.3,3,19,1,3,3,1,0,4,0,2,1,0,0.756,0.177,Likely to leave,Non-critical,14.68
+E_00018,Lajita Mall,Senior Software Engineer,Engineering,Gurgaon,28.4595,77.0266,41,3,2.3,0.2,14,0,5.0,3.8,3.8,3,20,2,4,2,0,0,1,0,2,0,0,0.235,0.15,Likely to stay,Non-critical,6.97
+E_00019,Janya Gaba,Senior Software Engineer,Engineering,Chennai,13.0827,80.2707,32,3,5.3,4.6,44,0,2.6,3.1,4.8,1,0,3,2,4,1,0,4,0,2,0,1,0.116,0.463,Likely to stay,Non-critical,17.65
+E_00020,Isha Kadakia,Sales Manager,Sales,Gurgaon,28.4595,77.0266,54,5,4.1,3.3,31,0,2.9,4.0,4.9,2,10,3,2,3,1,9,1,0,3,0,1,0.083,0.753,Likely to stay,Critical,26.96
+E_00021,Ekbal Garg,Software Engineer,Engineering,Chennai,13.0827,80.2707,48,2,2.7,2.2,24,1,4.1,4.0,4.6,2,4,4,2,3,1,0,2,0,2,0,0,0.1,0.106,Likely to stay,Non-critical,3.92
+E_00022,Nihal Shere,Key Account Manager,Sales,Pune,18.5204,73.8567,37,4,4.3,2.0,18,2,4.1,4.1,3.2,4,26,2,4,2,1,0,1,0,2,1,0,0.642,0.3,Likely to leave,Non-critical,22.48
+E_00023,Anamika Kanda,Senior Software Engineer,Engineering,Noida,28.5355,77.391,46,3,4.9,2.5,24,0,5.0,3.7,3.1,4,16,4,5,3,1,0,1,0,1,0,0,0.43,0.143,Likely to stay,Non-critical,8.59
+E_00024,Daksh Karnik,Financial Controller,Finance,Bangalore,12.9716,77.5946,53,5,11.5,3.4,27,0,3.9,3.6,3.7,4,19,2,4,4,0,5,1,0,2,0,1,0.403,0.654,Likely to stay,Critical,38.07
+E_00025,Diya Rattan,Solution Architect,Engineering,Hyderabad,17.385,78.4867,40,5,8.3,6.3,48,3,4.6,4.6,5.0,1,1,0,4,3,1,0,1,1,2,0,0,0.112,0.353,Likely to stay,Non-critical,13.36
+E_00026,Dominic Kakar,HR Executive,HR,Bangalore,12.9716,77.5946,27,1,3.8,2.3,25,1,3.3,3.7,3.6,4,16,2,2,3,0,0,1,0,1,1,0,0.654,0.059,Likely to leave,Non-critical,4.47
+E_00027,Simon Tata,Sales Executive,Sales,Hyderabad,17.385,78.4867,49,1,4.1,2.8,32,0,3.4,3.9,4.4,3,16,3,3,3,1,0,1,0,1,0,0,0.302,0.068,Likely to stay,Non-critical,3.48
+E_00028,Tara Dhar,Program Manager,Operations,Gurgaon,28.4595,77.0266,51,5,7.4,1.1,11,0,4.2,3.1,3.3,3,11,2,3,5,1,0,6,1,3,0,1,0.194,0.697,Likely to stay,Critical,30.38
+E_00029,Liam Koshy,HR Executive,HR,Chennai,13.0827,80.2707,36,1,3.7,2.0,20,1,4.5,4.8,4.6,2,0,1,3,2,1,0,1,0,1,0,0,0.078,0.063,Likely to stay,Non-critical,2.23
+E_00030,Priya Rastogi,Marketing Executive,Marketing,Pune,18.5204,73.8567,57,1,4.9,3.5,32,3,2.5,3.1,3.7,3,14,2,5,4,1,0,1,0,1,1,0,0.646,0.143,Likely to leave,Non-critical,10.76
+E_00031,Theodore Devi,Support Team Lead,Support,Bangalore,12.9716,77.5946,38,4,4.7,4.4,48,3,4.2,4.7,4.6,2,5,2,2,3,1,6,1,0,3,0,1,0.132,0.753,Likely to stay,Critical,29.55
+E_00032,Gavin Batta,Key Account Manager,Sales,Gurgaon,28.4595,77.0266,55,4,0.7,0.6,16,0,4.6,4.7,3.8,3,13,2,3,4,1,12,3,0,2,0,1,0.147,0.719,Likely to stay,Critical,28.97
+E_00033,Michael Dutta,Marketing Executive,Marketing,Chennai,13.0827,80.2707,31,1,3.9,2.6,28,1,2.6,2.9,4.1,2,8,3,4,3,0,0,1,0,1,0,0,0.153,0.06,Likely to stay,Non-critical,2.44
+E_00034,Devansh Rajan,Software Engineer,Engineering,Chennai,13.0827,80.2707,36,2,2.5,1.5,17,0,3.4,3.1,2.7,4,15,2,4,3,1,0,2,0,2,0,0,0.414,0.112,Likely to stay,Non-critical,6.61
+E_00035,Upadhriti Wadhwa,Marketing Specialist,Marketing,Bangalore,12.9716,77.5946,29,2,6.9,6.2,48,0,2.4,3.4,5.0,2,4,2,3,3,0,0,1,0,2,0,0,0.117,0.091,Likely to stay,Non-critical,3.48
+E_00036,Advay Contractor,Support Manager,Support,Bangalore,12.9716,77.5946,43,5,1.7,1.6,34,0,4.6,3.6,3.2,2,12,1,2,4,1,8,2,1,2,0,1,0.176,0.716,Likely to stay,Critical,30.3
+E_00037,Harini Choudhury,Program Manager,Operations,Bangalore,12.9716,77.5946,52,5,11.0,8.9,48,1,4.2,4.0,2.4,4,32,0,4,3,1,0,3,1,2,1,1,0.656,0.488,Likely to leave,Non-critical,37.05
+E_00038,Radhika Dugar,Support Analyst,Support,Bangalore,12.9716,77.5946,41,2,5.8,1.3,14,0,2.9,2.9,2.5,5,24,2,3,4,1,0,4,0,2,1,0,0.65,0.278,Likely to leave,Non-critical,20.99
+E_00039,Aarush Lall,L2 Support Engineer,Support,Gurgaon,28.4595,77.0266,52,3,5.5,1.2,11,0,3.8,4.0,4.0,3,5,2,5,5,1,0,1,0,1,0,0,0.069,0.256,Likely to stay,Non-critical,8.92
+E_00040,Yashica Cherian,Marketing Specialist,Marketing,Hyderabad,17.385,78.4867,52,2,6.7,4.6,39,1,2.7,3.4,3.4,4,14,2,3,2,0,0,2,0,1,1,0,0.705,0.075,Likely to leave,Non-critical,5.95
+E_00041,Yashica Issac,Marketing Executive,Marketing,Pune,18.5204,73.8567,39,1,5.8,0.4,9,1,3.5,4.2,3.9,3,14,1,3,4,0,0,1,0,1,0,0,0.223,0.133,Likely to stay,Non-critical,6.07
+E_00042,Kashvi Edwin,HR Executive,HR,Mumbai,19.076,72.8777,59,1,3.1,0.8,15,0,3.2,3.7,4.6,1,10,2,3,3,0,0,2,0,2,0,0,0.058,0.09,Likely to stay,Non-critical,3.07
+E_00043,Ekiya Suresh,Project Manager,Operations,Mumbai,19.076,72.8777,37,4,3.3,3.1,33,2,3.9,3.1,2.3,5,28,5,4,4,1,6,2,0,2,1,1,0.741,0.702,Likely to leave,Critical,57.47
+E_00044,Isaac Patil,Delivery Manager,Operations,Mumbai,19.076,72.8777,48,5,2.7,1.6,17,1,4.4,3.9,3.9,2,11,4,4,3,1,0,2,1,2,0,0,0.09,0.37,Likely to stay,Non-critical,13.43
+E_00045,Wriddhish Bhardwaj,HR Business Partner,HR,Navi Mumbai,19.033,73.0297,35,4,4.4,1.5,22,0,5.0,4.5,4.2,2,7,6,4,4,0,12,3,1,2,0,1,0.056,0.718,Likely to stay,Critical,24.35
+E_00046,Farhan Chada,Senior Finance Analyst,Finance,Hyderabad,17.385,78.4867,40,3,3.6,2.0,34,0,3.3,3.1,3.5,3,16,3,3,4,0,0,2,0,1,0,0,0.458,0.243,Likely to stay,Non-critical,15.08
+E_00047,Ekapad Walia,Program Manager,Operations,Gurgaon,28.4595,77.0266,45,5,1.5,0.4,10,0,3.3,3.3,5.0,1,4,1,5,4,1,0,3,0,3,0,1,0.062,0.69,Likely to stay,Critical,23.69
+E_00048,Kabir Soman,Project Manager,Operations,Hyderabad,17.385,78.4867,47,4,3.5,1.8,33,0,2.8,3.5,4.5,2,7,1,4,2,1,0,2,0,2,0,0,0.073,0.328,Likely to stay,Non-critical,11.52
+E_00049,Alka Wable,Engineering Manager,Engineering,Gurgaon,28.4595,77.0266,55,5,3.2,1.6,26,0,1.7,2.4,3.3,3,20,4,5,3,1,10,1,0,3,1,1,0.679,0.756,Likely to leave,Critical,58.61
+E_00050,Siddharth Zacharia,HR Business Partner,HR,Bangalore,12.9716,77.5946,49,4,2.1,1.4,21,0,3.5,3.6,3.4,4,15,1,3,4,0,0,4,0,2,0,1,0.335,0.576,Likely to stay,Critical,30.79
+E_00051,Devika Rastogi,Finance Manager,Finance,Gurgaon,28.4595,77.0266,46,5,1.6,1.4,20,1,4.8,4.1,4.2,2,0,2,4,3,1,6,4,1,3,0,1,0.084,0.779,Likely to stay,Critical,27.95
+E_00052,Raksha Varughese,Marketing Specialist,Marketing,Bangalore,12.9716,77.5946,32,2,3.8,0.7,11,0,5.0,4.4,4.6,2,6,3,4,4,1,0,1,0,1,0,0,0.053,0.129,Likely to stay,Non-critical,4.35
+E_00053,Jai Kota,Financial Controller,Finance,Pune,18.5204,73.8567,52,5,0.9,0.2,12,0,3.8,4.4,3.9,4,18,1,3,4,0,11,3,0,3,0,1,0.183,0.779,Likely to stay,Critical,33.35
+E_00054,Devansh Nigam,Lead Engineer,Engineering,Kolkata,22.5726,88.3639,47,4,4.5,3.9,32,0,4.5,3.9,2.7,5,20,4,3,4,0,5,1,0,2,1,1,0.562,0.674,Likely to leave,Critical,46.74
+E_00055,Victor Kannan,Marketing Specialist,Marketing,Pune,18.5204,73.8567,51,2,5.9,2.1,15,0,4.2,3.9,3.5,4,12,0,3,3,0,0,3,0,2,0,0,0.204,0.172,Likely to stay,Non-critical,7.62
+E_00056,Ekavir Bhargava,Sales Executive,Sales,Bangalore,12.9716,77.5946,60,1,2.5,1.5,13,0,2.8,3.6,4.6,1,4,1,4,3,1,0,6,0,2,0,0,0.062,0.174,Likely to stay,Non-critical,5.98
+E_00057,Ekansh Balay,Senior Finance Analyst,Finance,Chennai,13.0827,80.2707,43,3,3.8,1.4,21,0,2.5,3.2,4.1,3,14,4,3,4,0,0,1,0,2,0,0,0.278,0.268,Likely to stay,Non-critical,13.26
+E_00058,Ekavir Varkey,Support Manager,Support,Gurgaon,28.4595,77.0266,41,5,1.6,0.9,20,0,1.9,2.8,2.8,4,23,3,1,5,1,3,1,0,3,1,1,0.708,0.775,Likely to leave,Critical,61.66
+E_00059,Arya Sunder,Operations Analyst,Operations,Bangalore,12.9716,77.5946,42,2,7.8,1.7,26,0,5.0,4.5,4.7,1,0,2,2,3,1,0,1,0,2,0,0,0.064,0.111,Likely to stay,Non-critical,3.83
+E_00060,Kevin Solanki,Operations Analyst,Operations,Pune,18.5204,73.8567,40,2,1.2,0.7,8,0,3.6,3.7,4.9,2,6,3,3,4,1,0,4,0,2,0,0,0.058,0.283,Likely to stay,Non-critical,9.64
+E_00061,Urvashi Ray,Operations Analyst,Operations,Bangalore,12.9716,77.5946,37,2,10.7,10.3,48,0,3.8,3.7,4.2,2,4,5,1,3,1,0,2,0,2,0,0,0.092,0.139,Likely to stay,Non-critical,5.07
+E_00062,Girindra Chatterjee,Delivery Manager,Operations,Mumbai,19.076,72.8777,45,5,2.5,0.4,13,0,4.8,3.6,2.5,4,28,6,4,3,1,0,2,0,3,0,1,0.426,0.584,Likely to stay,Critical,34.93
+E_00063,Irya Sampath,HR Executive,HR,Bangalore,12.9716,77.5946,59,1,11.7,9.2,48,0,3.4,4.7,4.5,3,8,3,3,3,0,0,2,0,1,0,0,0.137,0.085,Likely to stay,Non-critical,3.37
+E_00064,Unni Bhagat,Marketing Executive,Marketing,Bangalore,12.9716,77.5946,54,1,7.3,0.9,16,0,4.1,4.1,2.8,5,30,1,4,4,0,0,2,0,1,0,0,0.443,0.151,Likely to stay,Non-critical,9.21
+E_00065,Darsh Rau,Senior Finance Analyst,Finance,Hyderabad,17.385,78.4867,51,3,4.4,1.3,13,1,3.2,3.5,3.0,4,23,3,3,3,0,0,2,0,1,1,0,0.679,0.149,Likely to leave,Non-critical,11.55
+E_00066,Ikbal Kothari,Program Manager,Operations,Mumbai,19.076,72.8777,46,5,4.7,3.9,43,1,3.7,3.7,4.2,2,7,1,5,3,1,11,3,0,3,0,1,0.11,0.78,Likely to stay,Critical,29.41
+E_00067,Ranveer Yadav,Marketing Executive,Marketing,Pune,18.5204,73.8567,43,1,2.6,0.6,20,0,2.0,2.6,4.2,2,6,3,4,3,0,0,2,0,1,0,0,0.138,0.068,Likely to stay,Non-critical,2.7
+E_00068,Logan Sami,Program Manager,Operations,Pune,18.5204,73.8567,55,5,6.1,5.8,48,2,3.6,4.0,4.3,2,6,1,4,3,1,0,5,0,3,0,1,0.13,0.663,Likely to stay,Critical,25.92
+E_00069,Arya Shere,Delivery Manager,Operations,Pune,18.5204,73.8567,39,5,5.4,0.7,15,0,3.6,3.9,4.4,2,10,0,4,3,1,9,2,0,3,0,1,0.052,0.759,Likely to stay,Critical,25.53
+E_00070,Faqid Savant,Marketing Specialist,Marketing,Bangalore,12.9716,77.5946,48,2,3.8,1.5,11,0,2.9,2.5,3.3,3,18,0,3,3,0,0,1,0,1,0,0,0.463,0.06,Likely to stay,Non-critical,3.74
+E_00071,Chandresh Zachariah,Marketing Executive,Marketing,Hyderabad,17.385,78.4867,34,1,0.5,0.3,15,1,3.4,3.3,3.3,4,15,2,3,4,0,0,3,0,1,1,0,0.612,0.226,Likely to leave,Non-critical,16.46
+E_00072,Girik Khalsa,HR Business Partner,HR,Bangalore,12.9716,77.5946,41,4,4.5,1.5,8,0,3.2,4.0,4.7,3,8,2,3,4,1,2,1,0,3,0,1,0.078,0.764,Likely to stay,Critical,27.09
+E_00073,Niharika Sunder,Project Manager,Operations,Hyderabad,17.385,78.4867,59,4,5.0,2.6,30,0,3.5,3.4,3.3,4,24,3,4,3,1,4,1,0,3,1,1,0.648,0.754,Likely to leave,Critical,56.82
+E_00074,Tanay Rattan,Marketing Specialist,Marketing,Delhi,28.6139,77.209,31,2,2.3,1.0,12,0,2.9,4.4,4.7,1,2,2,4,2,1,0,4,0,2,0,0,0.058,0.164,Likely to stay,Non-critical,5.59
+E_00075,Nitesh Raghavan,HR Business Partner,HR,Chennai,13.0827,80.2707,42,4,0.8,0.3,14,0,2.4,2.6,2.4,4,25,5,4,4,1,9,3,0,3,1,1,0.678,0.786,Likely to leave,Critical,60.88
+E_00076,Madhavi Lanka,Marketing Manager,Marketing,Bangalore,12.9716,77.5946,48,5,9.9,5.7,48,0,3.6,3.7,4.6,1,2,3,5,3,0,6,3,0,3,0,1,0.078,0.757,Likely to stay,Critical,26.84
+E_00077,Bhavika Sampath,Account Executive,Sales,Noida,28.5355,77.391,31,2,0.7,0.3,11,0,2.4,3.1,4.2,3,13,2,4,3,1,0,1,0,2,0,0,0.175,0.13,Likely to stay,Non-critical,5.49
+E_00078,Mohammed Gupta,Senior Software Engineer,Engineering,Kolkata,22.5726,88.3639,40,3,4.1,2.9,21,1,2.3,3.0,3.3,3,17,1,4,5,0,0,5,0,2,1,1,0.75,0.432,Likely to leave,Non-critical,35.64
+E_00079,Teerth Bhardwaj,Project Manager,Operations,Navi Mumbai,19.033,73.0297,52,4,5.1,1.3,16,0,3.3,3.5,4.0,2,6,1,3,3,1,6,3,0,3,0,1,0.064,0.778,Likely to stay,Critical,26.83
+E_00080,Dipta Bhandari,Support Team Lead,Support,Pune,18.5204,73.8567,49,4,4.3,3.0,31,1,3.3,2.9,3.0,4,31,3,5,3,1,3,3,0,3,1,1,0.776,0.77,Likely to leave,Critical,64.93

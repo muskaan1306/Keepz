@@ -17,12 +17,22 @@ probabilities. Employees at or above 50% on both are retention-action cases.
 ## Keepz formula
 
 ```text
-Keepz = criticality_probability / attrition_probability
+Keepz = 100 * (0.7 * criticality_probability * attrition_probability
+        + 0.3 * criticality_probability)
 ```
 
-Keepz is a ratio, not a probability. A higher value means criticality is high
-relative to attrition probability. Immediate retention action is identified
-separately by employees who have both high attrition and high criticality.
+Keepz is an importance-to-retain score, not a probability. Criticality is
+always counted because a critical employee matters even when their attrition
+risk is currently low. Attrition probability then amplifies the score so that
+critical employees who are more likely to leave rise to the top of the manager's
+attention list.
+
+Color bands:
+
+- 0-20: green
+- 20-40: amber
+- 40-55: orange
+- 55+: red
 
 ## Reproducible fields
 

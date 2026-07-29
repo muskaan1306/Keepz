@@ -3,8 +3,8 @@ from __future__ import annotations
 import pandas as pd
 import plotly.graph_objects as go
 
-BLUE, GREEN, RED, AMBER = "#0070AD", "#178C3D", "#E30021", "#FF9C29"
-INK, MUTED, GRID = "#272936", "#5B6472", "#E2E4E8"
+BLUE, GREEN, RED, AMBER, ORANGE = "#0070AD", "#178C3D", "#E30021", "#FFD068", "#FF9C29"
+INK, MUTED, GRID, AXIS = "#272936", "#5B6472", "#D8DDE3", "#334155"
 
 
 def _layout(fig: go.Figure, height: int, margin: dict | None = None) -> go.Figure:
@@ -20,18 +20,14 @@ def _layout(fig: go.Figure, height: int, margin: dict | None = None) -> go.Figur
 
 
 def _keepz_colorscale(
-    thresholds: tuple[float, float, float]
+    thresholds: tuple[float, float, float] | None = None
 ) -> tuple[list[list[float | str]], float]:
-    median, upper_quartile, maximum = thresholds
-    maximum = max(maximum, .01)
-    median_stop = min(.98, median / maximum)
-    upper_stop = min(.99, upper_quartile / maximum)
+    maximum = 80
     return [
         [0, GREEN],
-        [median_stop, GREEN],
-        [median_stop, AMBER],
-        [upper_stop, AMBER],
-        [upper_stop, RED],
+        [.25, AMBER],
+        [.50, ORANGE],
+        [.6875, RED],
         [1, RED],
     ], maximum
 
@@ -78,7 +74,7 @@ def attrition_criticality_scatter(
             "colorscale": colorscale,
             "cmin": 0,
             "cmax": color_max,
-            "colorbar": {"title": {"text": "Keepz ratio"}, "thickness": 14},
+            "colorbar": {"title": {"text": "Keepz"}, "thickness": 14},
             "line": {"color": "white", "width": 1},
             "opacity": .85,
         },
@@ -100,8 +96,14 @@ def attrition_criticality_scatter(
     for lx, ly, text, color in labels:
         fig.add_annotation(x=lx, y=ly, text=f"<b>{text}</b>", showarrow=False,
                            font={"size": 10, "color": color})
-    fig.update_xaxes(range=[0, 82], title="Attrition probability", gridcolor=GRID)
-    fig.update_yaxes(range=[0, 82], title="Criticality probability", gridcolor=GRID)
+    fig.update_xaxes(
+        range=[0, 82], title="Attrition probability", gridcolor=GRID,
+        title_font={"color": AXIS}, tickfont={"color": AXIS},
+    )
+    fig.update_yaxes(
+        range=[0, 82], title="Criticality probability", gridcolor=GRID,
+        title_font={"color": AXIS}, tickfont={"color": AXIS},
+    )
     return _layout(fig, 455, {"l": 65, "r": 100, "t": 30, "b": 60})
 
 
@@ -167,8 +169,10 @@ def feature_importance_chart(importance: pd.DataFrame, model: str) -> go.Figure:
         range=[0, max(30, float(selected["importance"].max() * 115))],
         title="Share of Random Forest importance",
         gridcolor=GRID,
+        title_font={"color": AXIS},
+        tickfont={"color": AXIS},
     )
-    fig.update_yaxes(showgrid=False)
+    fig.update_yaxes(showgrid=False, tickfont={"color": AXIS})
     return _layout(fig, 340, {"l": 10, "r": 40, "t": 10, "b": 45})
 
 
@@ -236,11 +240,11 @@ def location_comparison(
             "cmin": 0,
             "cmax": high,
         },
-        text=[f"<b>{value:.2f}</b>" for value in geo["avg_keepz"]],
-        textposition="inside",
-        textfont={"color": "white", "size": 12},
         hovertemplate="%{y}<br>Average Keepz: <b>%{x:.2f}</b><extra></extra>",
     ))
-    fig.update_xaxes(gridcolor=GRID, title="Average Keepz ratio")
-    fig.update_yaxes(showgrid=False)
+    fig.update_xaxes(
+        gridcolor=GRID, title="Average Keepz",
+        title_font={"color": AXIS}, tickfont={"color": AXIS},
+    )
+    fig.update_yaxes(showgrid=False, tickfont={"color": AXIS})
     return _layout(fig, 440, {"l": 10, "r": 35, "t": 20, "b": 45})

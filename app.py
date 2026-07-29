@@ -30,6 +30,15 @@ FEATURE_RULES = {
 @st.cache_data
 def load_data() -> tuple[pd.DataFrame, pd.DataFrame]:
     employees = pd.read_csv("data/employee_scores.csv")
+    employees["attrition_probability"] = employees["attrition_probability"].clip(.05, .80)
+    employees["criticality_probability"] = employees["criticality_probability"].clip(.05, .80)
+    employees["Keepz"] = (
+        100
+        * (
+            0.7 * employees["criticality_probability"] * employees["attrition_probability"]
+            + 0.3 * employees["criticality_probability"]
+        )
+    ).round(2)
     # Backward-compatible derivation prevents stale Streamlit caches or an
     # older generated CSV from breaking the Individual view.
     employees["attrition_prediction"] = employees["attrition_probability"].map(
@@ -76,16 +85,17 @@ def probability_band(value: float, high_is_bad: bool = True) -> tuple[str, str]:
 
 
 def keepz_band(value: float, full_population: pd.DataFrame) -> tuple[str, str]:
-    median, upper = full_population["Keepz"].quantile([.5, .75])
-    return ("High", "bad") if value >= upper else ("Medium", "warn") if value >= median else ("Low", "good")
+    if value >= 55:
+        return "High", "bad"
+    if value >= 40:
+        return "Elevated", "orange"
+    if value >= 20:
+        return "Medium", "warn"
+    return "Low", "good"
 
 
 def keepz_thresholds(full_population: pd.DataFrame) -> tuple[float, float, float]:
-    return (
-        float(full_population["Keepz"].median()),
-        float(full_population["Keepz"].quantile(.75)),
-        float(full_population["Keepz"].max()),
-    )
+    return (20.0, 40.0, 55.0)
 
 
 def replacement_band(months: float) -> tuple[str, str]:
@@ -125,22 +135,20 @@ def team_view(df: pd.DataFrame, importance: pd.DataFrame) -> None:
         (df["attrition_probability"] >= .50)
         & (df["criticality_probability"] >= .50)
     )
-    ranked = df.assign(
-        action_priority=df["attrition_probability"] * df["criticality_probability"]
-    ).sort_values("action_priority", ascending=False).head(6)
+    ranked = df.sort_values("Keepz", ascending=False).head(6)
     _, average_keepz_tone = keepz_band(df["Keepz"].mean(), employees)
 
     st.markdown('<div class="eyebrow">MANAGER BRIEF</div>', unsafe_allow_html=True)
     st.markdown('<h1 class="page-title">Where does your team need attention?</h1>', unsafe_allow_html=True)
     st.caption(
-        "Keepz is criticality probability divided by attrition probability. "
-        "The quadrant identifies action urgency."
+        "Keepz = 100 x (0.7 x criticality x attrition + 0.3 x criticality). "
+        "It combines role importance with attrition urgency."
     )
     cols = st.columns(4)
     cards = [
         ("Team size", str(len(df)), "neutral", "Employees in current filter"),
         ("Average Keepz", f"{df['Keepz'].mean():.2f}", average_keepz_tone,
-         "Criticality-to-attrition ratio"),
+         "Importance to retain"),
         ("Average attrition probability", f"{df['attrition_probability'].mean():.1%}",
          "bad" if df["attrition_probability"].mean() >= .5 else "warn",
          "Random Forest probability"),
@@ -154,19 +162,15 @@ def team_view(df: pd.DataFrame, importance: pd.DataFrame) -> None:
 
     left, right = st.columns([1.7, 1])
     with left:
-        heading("Attrition probability vs criticality", "Color = Keepz ratio")
+        heading("Attrition probability vs criticality", "Color = Keepz")
         st.plotly_chart(
             attrition_criticality_scatter(df, keepz_thresholds(employees)),
             use_container_width=True,
             config={"displayModeBar": False},
         )
     with right:
-        heading("Priority attention", "Highest combined attrition and criticality")
+        heading("Priority attention", "Highest Keepz employees")
         for _, row in ranked.iterrows():
-            is_action = (
-                row["attrition_probability"] >= .50
-                and row["criticality_probability"] >= .50
-            )
             c1, c2 = st.columns([3.1, 1])
             with c1:
                 st.button(
@@ -177,27 +181,27 @@ def team_view(df: pd.DataFrame, importance: pd.DataFrame) -> None:
                     args=("Individual", row["employee_id"]),
                 )
             with c2:
-                label, tone = ("Act", "bad") if is_action else ("Watch", "warn")
+                label, tone = keepz_band(row["Keepz"], employees)
                 st.markdown(
-                    f'<div class="risk-pill {tone}">{label} {row["attrition_probability"]:.0%}</div>',
+                    f'<div class="risk-pill {tone}">{label}<br>Keepz {row["Keepz"]:.2f}</div>',
                     unsafe_allow_html=True,
                 )
 
-    left, right = st.columns([1, 1.55])
-    with left:
-        heading("Attrition risk mix", "Counts by bounded probability")
-        st.plotly_chart(
-            risk_distribution(df),
-            use_container_width=True,
-            config={"displayModeBar": False},
-        )
-    with right:
-        heading("What drives attrition predictions?", "Random Forest feature importance")
-        st.plotly_chart(
-            feature_importance_chart(importance, "attrition_probability"),
-            use_container_width=True,
-            config={"displayModeBar": False},
-        )
+    # left, right = st.columns([1, 1.55])
+    # with left:
+    #     heading("Attrition risk mix", "Counts by bounded probability")
+    #     st.plotly_chart(
+    #         risk_distribution(df),
+    #         use_container_width=True,
+    #         config={"displayModeBar": False},
+    #     )
+    # with right:
+    #     heading("What drives attrition predictions?", "Random Forest feature importance")
+    #     st.plotly_chart(
+    #         feature_importance_chart(importance, "attrition_probability"),
+    #         use_container_width=True,
+    #         config={"displayModeBar": False},
+    #     )
 
 
 def individual_view(
@@ -235,7 +239,7 @@ def individual_view(
     with cols[1]:
         st.plotly_chart(
             probability_gauge(
-                row["attrition_probability"], "Attrition probability",
+                row["attrition_probability"], "Attrition",
                 attrition_category, True,
             ),
             use_container_width=True,
@@ -244,7 +248,7 @@ def individual_view(
     with cols[2]:
         st.plotly_chart(
             probability_gauge(
-                row["criticality_probability"], "Criticality probability",
+                row["criticality_probability"], "Criticality",
                 criticality_category, False,
             ),
             use_container_width=True,
@@ -252,10 +256,10 @@ def individual_view(
         )
     with cols[3]:
         metric(
-            "Keepz ratio",
+            "Keepz",
             f"{row['Keepz']:.2f}",
             keepz_tone,
-            f"{keepz_category} · criticality ÷ attrition",
+            f"{keepz_category} retention importance",
         )
 
     drivers = driver_rows(row, importance)
@@ -266,18 +270,18 @@ def individual_view(
         f"{row['employee_name']} has {row['attrition_probability']:.1%} attrition probability "
         f"and {row['criticality_probability']:.1%} criticality probability. "
         f"Signals to validate with the employee are {reason}. "
-        f"The Keepz ratio is {row['Keepz']:.2f}."
+        f"The Keepz score is {row['Keepz']:.2f}."
     )
     left, right = st.columns([1, 2])
-    with left:
-        st.markdown(
-            f'<div class="detail-card"><h3>Replacement difficulty</h3>'
-            f'<div class="detail-value {replacement_tone}">{replacement_category}</div>'
-            f'<p>Estimated replacement time: {row["replacement_time_months"]} months</p></div>',
-            unsafe_allow_html=True,
-        )
-    with right:
-        st.markdown(
+    # with left:
+    #     st.markdown(
+    #         f'<div class="detail-card"><h3>Replacement difficulty</h3>'
+    #         f'<div class="detail-value {replacement_tone}">{replacement_category}</div>'
+    #         f'<p>Estimated replacement time: {row["replacement_time_months"]} months</p></div>',
+    #         unsafe_allow_html=True,
+    #     )
+    # with right:
+    st.markdown(
             f'<div class="detail-card"><h3>Why this employee may need attention</h3>'
             f'<p>{html.escape(summary)}</p></div>',
             unsafe_allow_html=True,
@@ -339,9 +343,9 @@ def geography_view(df: pd.DataFrame) -> None:
     cards = [
         ("Locations", str(len(geo)), "neutral", "Offices represented"),
         ("Average Keepz", f"{df['Keepz'].mean():.2f}", average_keepz_tone,
-         "Criticality ÷ attrition probability"),
+         "Importance to retain"),
         ("Highest average Keepz", highest["location"], "bad",
-         f"Office ratio: {highest['avg_keepz']:.2f}"),
+         f"Office score: {highest['avg_keepz']:.2f}"),
     ]
     for col, card in zip(cols, cards):
         with col:
@@ -356,7 +360,7 @@ def geography_view(df: pd.DataFrame) -> None:
             config={"displayModeBar": False},
         )
     with right:
-        heading("Office comparison", "Average Keepz ratio")
+        heading("Office comparison", "Average Keepz")
         st.plotly_chart(
             location_comparison(geo, keepz_thresholds(employees)),
             use_container_width=True,
@@ -385,7 +389,7 @@ st.markdown(
     """
     <style>
     [data-testid="stSidebarUserContent"] {
-        padding-top: 1rem;
+        padding-top: 0rem;
     }
     [data-testid="stSidebar"] div:first-child {
         padding-top: 0rem;
@@ -408,10 +412,14 @@ with st.sidebar:
     )
     st.markdown('<div class="sidebar-rule"></div>', unsafe_allow_html=True)
     department = st.selectbox(
-        "Department", ["All departments"] + sorted(employees["department"].unique())
+        "Department",
+        ["All departments"] + sorted(employees["department"].unique()),
+        index=(["All departments"] + sorted(employees["department"].unique())).index("Marketing"),
     )
     location = st.selectbox(
-        "Location", ["All locations"] + sorted(employees["location"].unique())
+        "Location",
+        ["All locations"] + sorted(employees["location"].unique()),
+        index=(["All locations"] + sorted(employees["location"].unique())).index("Bangalore"),
     )
     st.caption("Random Forest probabilities are bounded between 5% and 80%.")
 
@@ -430,7 +438,4 @@ elif page == "Geography":
 else:
     team_view(filtered, feature_importance)
 
-st.markdown(
-    '<div class="footer-note">Model scores support manager judgement; they do not replace it.</div>',
-    unsafe_allow_html=True,
-)
+

@@ -253,10 +253,14 @@ df["criticality_prediction"] = np.where(
     df["criticality_probability"] >= .50, "Critical", "Non-critical"
 )
 
-# Keepz follows the requested ratio. It is not a probability:
-# higher criticality and lower attrition probability produce a higher value.
+# Keepz is an importance-to-retain score, not a probability. Criticality is
+# always counted, while attrition probability amplifies urgent retention need.
 df["Keepz"] = (
-    df["criticality_probability"] / df["attrition_probability"]
+    100
+    * (
+        0.7 * df["criticality_probability"] * df["attrition_probability"]
+        + 0.3 * df["criticality_probability"]
+    )
 ).round(2)
 
 feature_importance = pd.concat(
