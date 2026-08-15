@@ -228,7 +228,7 @@ def individual_view(
     )
 
     attrition_category, attrition_tone = probability_band(row["attrition_probability"])
-    criticality_category, _ = probability_band(row["criticality_probability"], False)
+    criticality_category, _ = probability_band(row["criticality_probability"], True)
     keepz_category, keepz_tone = keepz_band(row["Keepz"], full_population)
     prediction = row["attrition_prediction"]
     prediction_tone = "bad" if prediction == "Likely to leave" else "good"
@@ -249,7 +249,7 @@ def individual_view(
         st.plotly_chart(
             probability_gauge(
                 row["criticality_probability"], "Criticality",
-                criticality_category, False,
+                criticality_category, True,
             ),
             use_container_width=True,
             config={"displayModeBar": False},
